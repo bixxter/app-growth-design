@@ -73,34 +73,13 @@ The problem with turning a YouTube channel into agent knowledge is that the naiv
 
 So the pipeline is built around one idea: **the frames are not decoration, they are the missing half of the content.**
 
-```
-30 videos (5.7 h)
-      │
-  1 ──┤ yt-dlp: captions only, 6-wide          → 2.6 MB VTT / 220,498 words
-      │
-  2 ──┤ dedupe rolling captions, regroup       →   49,629 words, ~30s blocks
-      │   into ~30s timestamped blocks             (4.4× smaller, addressable)
-      │
-  3 ──┤ yt-dlp: 480p video, 3-wide             → 510 MB, deleted after stage 4
-      │
-  4 ──┤ ONE AGENT PER VIDEO, in parallel:      →   30 notes / 118,660 words
-      │   read transcript → find the moments        1,161 frames extracted
-      │   where meaning is on screen, not in        476 described in-line
-      │   the audio → ffmpeg those timestamps
-      │   → actually LOOK at the frames →
-      │   write a structured note
-      │      ↓
-      │   second agent re-reads each note against the transcript and
-      │   fixes what's missing — unresolved "this screen", dropped numbers,
-      │   verbatim bloat, vague filler rules
-      │
-  5 ──┤ SIX AGENTS, one per theme, each        →    6 playbooks / 55,241 words
-      │   reading across all 30 notes:              + SKILL.md router (2,378 words)
-      │   merge, resolve contradictions,
-      │   keep every number and product name
-```
+<!-- generated — edit docs/diagrams.mjs and run `node docs/diagrams.mjs`, don't hand-edit the SVG -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bixxter/app-growth-design/main/docs/flow-dark.svg">
+  <img alt="Two streams enter: captions, deduped from 220,498 to 49,629 words, and 510 MB of 480p video. Both feed an enrich agent that runs once per video — read the transcript, find where meaning is on screen, cut those frames and look at them, write a structured note — followed by a verify agent. Out come 30 notes, 118,660 words and 1,161 frames, which six theme agents turn into six playbooks and a SKILL.md router." src="https://raw.githubusercontent.com/bixxter/app-growth-design/main/docs/flow-light.svg">
+</picture>
 
-Note what happens to the word count at stage 4: the notes come out **more than twice the size of the speech**. That's the whole point — 1,161 screenshots put back what the captions lost.
+Note what happens to the word count in the middle: the notes come out **more than twice the size of the speech**. That's the whole point — 1,161 screenshots put back what the captions lost.
 
 Three details that turned out to matter more than expected:
 

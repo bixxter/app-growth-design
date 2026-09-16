@@ -135,6 +135,12 @@ The `description:` field in the frontmatter matters more than anything else in t
 
 ## 4. The numbers
 
+<!-- generated — edit docs/diagrams.mjs and run `node docs/diagrams.mjs`, don't hand-edit the SVG -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bixxter/app-growth-design/main/docs/volume-dark.svg">
+  <img alt="Words at each stage, on a linear scale: raw captions 220,498; deduped and timestamped 49,629; 30 notes 118,660 — the only bar that grows, where 1,161 screenshots enter; 6 playbooks 55,241; SKILL.md 2,378." src="https://raw.githubusercontent.com/bixxter/app-growth-design/main/docs/volume-light.svg">
+</picture>
+
 | Stage | Output | Volume |
 |---|---|---|
 | Source | 30 videos | 5.7 hours |
