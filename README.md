@@ -1,11 +1,14 @@
 # app-growth-design
 
+[![npm](https://img.shields.io/npm/v/app-growth-design)](https://www.npmjs.com/package/app-growth-design)
+[![license](https://img.shields.io/npm/l/app-growth-design)](LICENSE)
+
 A Claude Code skill for the decisions that actually move an app: **onboarding, paywalls, pricing, retention, gamification, growth loops and screen-level craft.**
 
 It is not another "be a helpful product expert" prompt. It is a knowledge base — 5.7 hours of teardowns from [Tim Gabe's YouTube channel](https://www.youtube.com/@TimGabe) compressed into six playbooks where every non-obvious claim carries a `[NN]` marker back to the video it came from, and every case study keeps its numbers.
 
 ```bash
-npx github:bixxter/app-growth-design
+npx app-growth-design
 ```
 
 That's it. Pick user-wide or project-only, restart Claude Code, and the skill loads itself whenever you're working on one of those problems.
@@ -41,17 +44,20 @@ Same for the rest:
 
 ```bash
 # interactive — asks user-wide or project-only
-npx github:bixxter/app-growth-design
+npx app-growth-design
 
 # non-interactive
-npx github:bixxter/app-growth-design --user      # ~/.claude/skills/app-growth-design
-npx github:bixxter/app-growth-design --project   # ./.claude/skills/app-growth-design
-npx github:bixxter/app-growth-design --dir ~/some/skills
+npx app-growth-design --user      # ~/.claude/skills/app-growth-design
+npx app-growth-design --project   # ./.claude/skills/app-growth-design
+npx app-growth-design --dir ~/some/skills
 
 # later
-npx github:bixxter/app-growth-design --force       # update in place
-npx github:bixxter/app-growth-design --uninstall
+npx app-growth-design --force       # update in place
+npx app-growth-design --uninstall
 ```
+
+Straight from the repo works too, if you'd rather skip the registry:
+`npx github:bixxter/app-growth-design`
 
 Node 18+. No dependencies — the installer is one file that copies `skill/` into your skills directory and nothing else.
 

@@ -23,9 +23,9 @@ const red = s => c('31', s)
 const HELP = `
 ${bold('app-growth-design')} — install the skill into Claude Code
 
-  ${cyan('npx github:bixxter/app-growth-design')}            pick a target interactively
-  ${cyan('npx github:bixxter/app-growth-design --user')}     ~/.claude/skills/${SKILL}
-  ${cyan('npx github:bixxter/app-growth-design --project')}  ./.claude/skills/${SKILL}
+  ${cyan('npx app-growth-design')}            pick a target interactively
+  ${cyan('npx app-growth-design --user')}     ~/.claude/skills/${SKILL}
+  ${cyan('npx app-growth-design --project')}  ./.claude/skills/${SKILL}
 
 Options
   --user, --global   install for every project on this machine (default)
@@ -130,7 +130,7 @@ async function main() {
     ${cyan('"design a streak that does not backfire"')}
 
   The skill loads itself when the topic matches. To force it: ${cyan(`/${SKILL}`)}
-  ${dim('Uninstall: npx github:bixxter/app-growth-design --uninstall')}
+  ${dim(`Uninstall: npx ${SKILL} --uninstall`)}
 `)
 }
 
