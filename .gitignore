@@ -1,0 +1,12 @@
+# Pipeline working data — regenerate it, never commit it.
+# Captions, video and frames are the source author's material; only the
+# synthesized skill in skill/ is published from this repo.
+corpus/
+*.vtt
+*.mp4
+*.part
+*.ytdl
+
+node_modules/
+.DS_Store
+*.log

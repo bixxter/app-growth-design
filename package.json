@@ -1,0 +1,46 @@
+{
+  "name": "app-growth-design",
+  "version": "1.0.0",
+  "description": "Claude Code skill: app onboarding, paywalls, pricing, retention, gamification and growth — distilled from 30 Tim Gabe teardowns into six source-marked playbooks.",
+  "type": "module",
+  "bin": {
+    "app-growth-design": "bin/install.mjs"
+  },
+  "files": [
+    "bin",
+    "skill",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "install-skill": "node bin/install.mjs"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "claude-skill",
+    "agent-skill",
+    "ai-agent",
+    "app-growth",
+    "onboarding",
+    "paywall",
+    "pricing",
+    "retention",
+    "gamification",
+    "product-design",
+    "ux"
+  ],
+  "author": "bixxter",
+  "license": "MIT",
+  "homepage": "https://github.com/bixxter/app-growth-design#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bixxter/app-growth-design.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bixxter/app-growth-design/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
