@@ -15,6 +15,19 @@ That's it. Pick user-wide or project-only, restart Claude Code, and the skill lo
 
 ---
 
+## tl;dv
+
+*Too long; didn't view — which is rather the point.*
+
+- **What.** 30 app teardowns → six playbooks your agent reads instead of guessing: onboarding, paywalls, retention, psychology, growth, craft.
+- **Why it's not slop.** Every non-obvious claim carries a `[NN]` marker back to the video. 243 named products with their real numbers. Where the source contradicts itself, the playbooks say so instead of picking a side.
+- **The trick.** A design channel keeps its meaning *on screen* — "look at what they did here" and the captions carry `here` and nothing else. So the pipeline reads 1,161 screenshots too, and the notes come out **2.4× bigger than the speech**.
+- **Install.** `npx app-growth-design` → restart Claude Code → describe your problem. It loads itself.
+- **Credit.** All the insight is [Tim Gabe's](https://www.youtube.com/@TimGabe). This repo ships synthesized notes and the pipeline — no captions, no video, no screenshots.
+- **Caveat.** One practitioner's opinionated view, not settled fact. Cases with real numbers are evidence; the rest are hypotheses to test.
+
+---
+
 ## What changes when it's installed
 
 Without it, ask Claude *"my paywall converts at 2%, what do I test first?"* and you get sensible, generic advice: try annual vs monthly, test your copy, add social proof.
